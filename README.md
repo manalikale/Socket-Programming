@@ -30,18 +30,19 @@ Code Files:
 	warehouse.cc - It receives Devices information from all the Stores mentioned above,sends the truck vector to Store 1 and receives it after 2 rounds after traversing Store 1 to Store 4. 		
 
 Steps for running the program:
-	1. Open a putty session. 
-	2. Go to the directory where source code files are saved.
-	3. Run makefile to compile source code and create executables.
-	   run makefile as: gmake all
-	3. Then open different simulteneous putty connections and run codes as below in the order-
-		./warehouse.o
-		./store1.o
-		./store2.o
-		./store3.o
-		./store4.o
+
+1. Open a putty session. 
+2. Go to the directory where source code files are saved.
+3. Run makefile to compile source code and create executables.
+  run makefile as: gmake all
+4. Then open different simulteneous putty connections and run codes as below in the order-
+./warehouse.o
+./store1.o
+./store2.o
+./store3.o
+./store4.o
 		
-	4.Terminate the warehouse process using Ctrl+C when it shows "End of Phase 2 for Warehouse" on the window where 	you run "./warehouse.o".
+5.Terminate the warehouse process using Ctrl+C when it shows "End of Phase 2 for Warehouse" on the window where 	you run "./warehouse.o".
 	
 The format of the messages exchanged are as per the specification mentioned in the EE450_Socket_Programming_Fall12.pdf file. 
 
