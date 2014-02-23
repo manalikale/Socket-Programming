@@ -41,7 +41,7 @@ Steps for running the program:
 		./store3.o
 		./store4.o
 		
-	4.Terminate the warehouse process using Ctrl+C when it shows "End of Phase 2 for Warehouse" on the window where you run "./warehouse.o".
+	4.Terminate the warehouse process using Ctrl+C when it shows "End of Phase 2 for Warehouse" on the window where 	you run "./warehouse.o".
 	
 The format of the messages exchanged are as per the specification mentioned in the EE450_Socket_Programming_Fall12.pdf file. 
 
