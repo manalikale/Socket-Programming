@@ -41,14 +41,11 @@ Steps for running the program:
 ./store2.o
 ./store3.o
 ./store4.o
-		
 5.Terminate the warehouse process using Ctrl+C when it shows "End of Phase 2 for Warehouse" on the window where 	you run "./warehouse.o".
 	
 The format of the messages exchanged are as per the specification mentioned in the EE450_Socket_Programming_Fall12.pdf file. 
 
 The project works fine once the connection with the warehouse is establihed. The store codes should then be executed in the following sequence: store1, store2, store3, store4 for complete execution of both Phase1 and Phase2. However, if Ctrl+C is pressed during execution of any store code, the next store will give a pipe fail error since fork() has been used in the warehouse code for creating children processes(stores) and pipe is used for inter-process communication. 
 
-h.  Reused Code:  The following functions have been used from Beej's manual:
-	getsockname(),ntohs(),listen(),recvfrom(),receive(),send(),sendto(),bind(),connect(),accept(),inet_ntop(),close().
-	
-	Code for reading a file is reused from www.stackoverflow.com and code for fork() in warehouse.cc is reused from Prof. Bill Cheng's slides(Lec 7:slide5)
+The following functions have been used from Beej's manual:
+getsockname(),ntohs(),listen(),recvfrom(),receive(),send(),sendto(),bind(),connect(),accept(),inet_ntop(),close().
